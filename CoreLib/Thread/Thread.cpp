@@ -4,7 +4,7 @@
 
 
 // Engine includes
-#include <CoreLib/Thread/Thread.h>
+#include <Thread/Thread.h>
 
  
 Thread::Thread()

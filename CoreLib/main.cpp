@@ -2,12 +2,12 @@
 #include <iostream>
 
 // Common includes
-#include <Common/Defines.h>
+#include <Defines.h>
 
 // Engine includes
-#include <CoreLib/Rendering/WindowRenderer.h>
-#include <CoreLib/String/String.h>
-#include <CoreLib/Thread/Thread.h>
+#include <Rendering/WindowRenderer.h>
+#include <String/String.h>
+#include <Thread/Thread.h>
 
 int main()
 {

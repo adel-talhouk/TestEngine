@@ -4,7 +4,7 @@
 #include <iostream>
 
 // Engine includes
-#include <CoreLib/Rendering/WindowRenderer.h>
+#include <Rendering/WindowRenderer.h>
 
 void WindowRenderer::Init()
 {

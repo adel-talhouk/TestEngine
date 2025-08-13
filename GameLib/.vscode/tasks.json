@@ -18,7 +18,9 @@
 				"-o",
 				"${workspaceFolder}/Build/GameLib/main",
 				"-I${workspaceFolder}",
-				"-I${workspaceFolder}/../"
+				"-I${workspaceFolder}/../Common/",
+				"-I${workspaceFolder}/../CoreLib/"
+				// "-I${workspaceFolder}/../"
 			],
 			"options": {
 				"cwd": "${fileDirname}"

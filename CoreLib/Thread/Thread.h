@@ -2,10 +2,10 @@
 // Class declaration for Thread
 
 // Common includes
-#include <Common/Defines.h>
+#include <Defines.h>
 
 // Engine includes
-#include <CoreLib/String/String.h>
+#include <String/String.h>
 
 class Thread
 {

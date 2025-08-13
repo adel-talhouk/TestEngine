@@ -1,7 +1,7 @@
 // Class implementation for String
 
 // Engine includes
-#include <CoreLib/String/String.h>
+#include <String/String.h>
 
 
 String String::sEmptyString = String("");
