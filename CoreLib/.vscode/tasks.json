@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "CoreLib - Build main.cpp",
+			"command": "/usr/bin/clang++",
+			"args": [
+				"-std=c++20",
+				"-fcolor-diagnostics",
+				"-fansi-escape-codes",
+				"-g",
+				"${workspaceFolder}/*.cpp",
+				"${workspaceFolder}/Rendering/*.cpp",
+				"${workspaceFolder}/String/*.cpp",
+				"${workspaceFolder}/Thread/*.cpp",
+				// "${workspaceFolder}/../Common/*.cpp",
+				"-o",
+				"${workspaceFolder}/Build/CoreLib/main",
+				"-I${workspaceFolder}",
+				"-I${workspaceFolder}/../"	// No bueno, it will let me include GameLib. But if I want to use "Common/Defines? etc in GameLib, I need to do it in CoreLib too, otherwise it cannot compile CoreLib cpp files. So if GameLib wants to use Common/... notation, CoreLib must do so too, and that means we must find a way to exclude GameLib includes
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: /usr/bin/clang++"
+		}
+	]
+}
