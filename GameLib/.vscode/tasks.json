@@ -14,13 +14,11 @@
 				"${workspaceFolder}/../CoreLib/Rendering/*.cpp",
 				"${workspaceFolder}/../CoreLib/String/*.cpp",
 				"${workspaceFolder}/../CoreLib/Thread/*.cpp",
-				// "${workspaceFolder}/../Common/*.cpp",
 				"-o",
 				"${workspaceFolder}/Build/GameLib/main",
 				"-I${workspaceFolder}",
 				"-I${workspaceFolder}/../Common/",
 				"-I${workspaceFolder}/../CoreLib/"
-				// "-I${workspaceFolder}/../"
 			],
 			"options": {
 				"cwd": "${fileDirname}"

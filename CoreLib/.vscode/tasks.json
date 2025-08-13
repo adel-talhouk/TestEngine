@@ -14,12 +14,10 @@
 				"${workspaceFolder}/Rendering/*.cpp",
 				"${workspaceFolder}/String/*.cpp",
 				"${workspaceFolder}/Thread/*.cpp",
-				// "${workspaceFolder}/../Common/*.cpp",
 				"-o",
 				"${workspaceFolder}/Build/CoreLib/main",
 				"-I${workspaceFolder}",
-				"-I${workspaceFolder}/../Common/"	// No bueno, it will let me include GameLib. But if I want to use "Common/Defines" etc in GameLib, I need to do it in CoreLib too, otherwise it cannot compile CoreLib cpp files. So if GameLib wants to use Common/... notation, CoreLib must do so too, and that means we must find a way to exclude GameLib includes
-				// "-I${workspaceFolder}/../"	// No bueno, it will let me include GameLib. But if I want to use "Common/Defines" etc in GameLib, I need to do it in CoreLib too, otherwise it cannot compile CoreLib cpp files. So if GameLib wants to use Common/... notation, CoreLib must do so too, and that means we must find a way to exclude GameLib includes
+				"-I${workspaceFolder}/../Common/"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
